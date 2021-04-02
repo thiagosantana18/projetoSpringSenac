@@ -1,6 +1,6 @@
 package br.com.senac;
 
-import java.util.List;
+//import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
@@ -35,12 +35,12 @@ public class Inicializacao implements ApplicationListener<ContextRefreshedEvent>
 		
 		alunoService.salvar(aluno2);
 		
-		List<Aluno> listaAlunos = alunoService.buscarTodosAlunos();
+		/*List<Aluno> listaAlunos = alunoService.buscarTodosAlunos();
 		
 		for (Aluno aluno: listaAlunos) {
 			System.out.println("\n"+"Aluno: ");
 			System.out.println(aluno.getNome());
-		}
+		}*/
 		
 		
 		Professor professor1 = new Professor();
@@ -55,12 +55,12 @@ public class Inicializacao implements ApplicationListener<ContextRefreshedEvent>
 		
 		professorService.salvar(professor2);
 		
-		List<Professor> listaProfessores = professorService.buscarTodosProfessores();
+		/*List<Professor> listaProfessores = professorService.buscarTodosProfessores();
 		
 		for(Professor professor: listaProfessores) {
 			System.out.println("\n"+"Professor: ");
 			System.out.println(professor.getNome());
-		}
+		}*/
 	}
 
 }
